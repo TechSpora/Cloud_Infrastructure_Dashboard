@@ -1,0 +1,27 @@
+{
+  "name": "cloud-infrastructure-dashboard",
+  "version": "1.0.0",
+  "description": "Real-time monitoring and management dashboard for cloud infrastructure with automated scaling and cost optimization",
+  "main": "server/index.js",
+  "scripts": {
+    "dev": "concurrently \"npm run server\" \"npm run client\"",
+    "server": "cd server && npm run dev",
+    "client": "cd client && npm run serve",
+    "build": "cd client && npm run build",
+    "install-all": "npm install && cd server && npm install && cd ../client && npm install"
+  },
+  "keywords": [
+    "cloud",
+    "monitoring",
+    "dashboard",
+    "aws",
+    "docker",
+    "kubernetes"
+  ],
+  "author": "",
+  "license": "MIT",
+  "devDependencies": {
+    "concurrently": "^8.2.2"
+  }
+}
+
